@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Quizz App</string>
+    <string name="domanda1">Question 1: </string>
+    <string name="testo1">This picture shows an object in space that has an icy core with a tail of gas and dust that extends millions of miles. What is this?</string>
+    <string name="domanda2">Question 2:</string>
+    <string name="testo2">Which kind of waves are used to make and receive cellphone calls?</string>
+    <string name="domanda3">Question 3:</string>
+    <string name="testo3">This picture shows three layers of the Earth. Which layer is the hottest?</string>
+    <string name="domanda4">Question 4:</string>
+    <string name="testo4">Which of these is the main way that ocean tides are created?</string>
+    <string name="domanda5">Question 5:</string>
+    <string name="testo5">What does a light-year measure?</string>
+    <string name="domanda6">Question 6:</string>
+    <string name="testo6">Denver, Colorado, is at a higher altitude than Los Angeles, California. Which of these statements is correct?</string>
+    <string name="domanda7">Question 7:</string>
+    <string name="testo7">The loudness of a sound is determined by what property of a sound wave?</string>
+
+    <string name="answeare">answeare</string>
+    <string name="name">name</string>
+    <string name="e_mail">e-mail</string>
+    <string name="succes">Done</string>
+    <string name="error">Please fill any empty fields</string>
+    <string name="a_star">A star</string>
+    <string name="a_comet">A comet</string>
+    <string name="a_moon">A moon</string>
+    <string name="an_asteroid">An asteroid</string>
+    <string name="radio_waves">Radio Waves</string>
+    <string name="gravity_waves">Gravity Waves</string>
+    <string name="crust">Crust</string>
+    <string name="outer_core">Outer Core</string>
+    <string name="mantle">Mantle</string>
+    <string name="inner_core">Inner Core</string>
+    <string name="the_gravitational_pull_of_the_moon">The gravitational pull of the moon</string>
+    <string name="sun">The gravitational pull of the sun</string>
+    <string name="brightness">Brightness</string>
+    <string name="time">Time</string>
+    <string name="distance">Distance</string>
+    <string name="weight">Weight</string>
+    <string name="water_boils_at_a_lower_temperature_in_denver_than_los_angeles">Water boils at a lower temperature in Denver than Los Angeles.</string>
+    <string name="water_boils_at_a_higher_temperature_in_denver_than_los_angeles">Water boils at a higher temperature in Denver than Los Angeles.</string>
+    <string name="amplitude">Amplitude</string>
+    <string name="height">height</string>
+    <string name="frequency">Frequency</string>
+    <string name="submit">Submit</string>
+    <string name="welcome">Welcome </string>
+    <string name="correct">Correct!</string>
+    <string name="wrong1">Wrong!\nThe wright answer is a Comet</string>
+    <string name="wrong2">Wrong!\nThe correct answer is Radio Waves</string>
+    <string name="wrong3">Wrong!\nThe correct answer is Inner Core</string>
+    <string name="wrong4">Wrong!\nThe correct answer is The gravitational pull of the moon.</string>
+    <string name="wrong5">Wrong!\nThe correct answere is Distance</string>
+    <string name="wrong6">Wrong!\nThe correct answer is Water boils at a lower temperature in Denver than Los Angeles.</string>
+    <string name="wrong7">Wrong!\nThe correct answer is Amplitude and Height</string>
+    <string name="Welcome">Welcome</string>
+    <string name="share">Share</string>
+
+</resources>
