@@ -539,5 +539,3 @@ public class MainActivity extends AppCompatActivity {
 }
 
 
-//salvare una volta premuto submit button  aggiungere tasto share
-//aggiungere tasto reset
