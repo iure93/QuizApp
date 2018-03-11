@@ -28,26 +28,19 @@
         //question 1
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/QuestionTitle"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-
-            android:background="@color/colorAccent"
-            android:gravity="center"
             android:text="@string/domanda1"
-            android:textColor="#212121"
-            android:textSize="34sp" />
+            />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+style="@style/Text"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="@string/testo1"
-            android:textSize="24sp" />
+            android:text="@string/testo1" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -112,56 +105,43 @@
         //hidden text
 
         <TextView
+            style="@style/HiddenTextCorrect"
             android:id="@+id/correct1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#388E3C"
             android:text="@string/correct"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
         <TextView
+            style="@style/HiddenTextWrong"
             android:id="@+id/wrong1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#D32F2F"
             android:text="@string/wrong1"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
         //question 2
 
         <TextView
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/QuestionTitle"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            android:background="@color/colorAccent"
-            android:gravity="center"
             android:text="@string/domanda2"
-            android:textColor="#212121"
-            android:textSize="34sp" />
+            />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Text"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:text="@string/testo2"
-            android:textColor="#212121"
-            android:textSize="24sp" />
+            />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
@@ -193,55 +173,44 @@
         //hidden text
 
         <TextView
+            style="@style/HiddenTextCorrect"
             android:id="@+id/correct2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#388E3C"
             android:text="@string/correct"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
         <TextView
+            style="@style/HiddenTextWrong"
             android:id="@+id/wrong2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#D32F2F"
             android:text="@string/wrong2"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
         //question 3
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+  style="@style/QuestionTitle"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            android:background="@color/colorAccent"
             android:gravity="center"
             android:text="@string/domanda3"
-            android:textColor="#212121"
-            android:textSize="34sp" />
+            />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+style="@style/Text"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:text="@string/testo3"
-            android:textColor="#212121"
-            android:textSize="24sp" />
+        />
 
         <ImageView
             android:layout_width="match_parent"
@@ -307,55 +276,44 @@
         //hidden text
 
         <TextView
+            style="@style/HiddenTextCorrect"
             android:id="@+id/correct3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#388E3C"
             android:text="@string/correct"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
         <TextView
+            style="@style/HiddenTextWrong"
             android:id="@+id/wrong3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#D32F2F"
             android:text="@string/wrong3"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
         //question 4
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/QuestionTitle"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
             android:background="@color/colorAccent"
-            android:gravity="center"
             android:text="@string/domanda4"
-            android:textColor="#212121"
-            android:textSize="34sp" />
+    />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+    style="@style/Text"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:text="@string/testo4"
-            android:textColor="#212121"
-            android:textSize="24sp" />
+     />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
@@ -386,55 +344,46 @@
         //hidden text
 
         <TextView
+            style="@style/HiddenTextCorrect"
             android:id="@+id/correct4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#388E3C"
+
             android:text="@string/correct"
-            android:textSize="24sp"
+
             android:visibility="gone"
             />
 
         <TextView
+            style="@style/HiddenTextWrong"
             android:id="@+id/wrong4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#D32F2F"
             android:text="@string/wrong4"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
         //question 5
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+           style="@style/QuestionTitle"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            android:background="@color/colorAccent"
-            android:gravity="center"
             android:text="@string/domanda5"
-            android:textColor="#212121"
-            android:textSize="34sp" />
+            />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+   style="@style/Text"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:text="@string/testo5"
-            android:textColor="#212121"
-            android:textSize="24sp" />
+          />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -492,55 +441,43 @@
         //hidden text
 
         <TextView
+            style="@style/HiddenTextCorrect"
             android:id="@+id/correct5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#388E3C"
             android:text="@string/correct"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
         <TextView
+            style="@style/HiddenTextWrong"
             android:id="@+id/wrong5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#D32F2F"
             android:text="@string/wrong5"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
         //question 6
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/QuestionTitle"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            android:background="@color/colorAccent"
-            android:gravity="center"
             android:text="@string/domanda6"
-            android:textColor="#212121"
-            android:textSize="34sp" />
+           />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Text"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:text="@string/testo6"
-            android:textColor="#212121"
-            android:textSize="24sp" />
+    />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
@@ -572,55 +509,42 @@
         //hidden text
 
         <TextView
+            style="@style/HiddenTextCorrect"
             android:id="@+id/correct6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#388E3C"
             android:text="@string/correct"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
         <TextView
+            style="@style/HiddenTextWrong"
             android:id="@+id/wrong6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#D32F2F"
             android:text="@string/wrong6"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
         //question 7
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+style="@style/QuestionTitle"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            android:background="@color/colorAccent"
-            android:gravity="center"
             android:text="@string/domanda7"
-            android:textColor="#212121"
-            android:textSize="34sp" />
+        />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+style="@style/Text"            android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:text="@string/testo7"
-            android:textColor="#212121"
-            android:textSize="24sp" />
+          />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -678,28 +602,22 @@
         //hidden text
 
         <TextView
+            style="@style/HiddenTextCorrect"
             android:id="@+id/correct7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#388E3C"
             android:text="@string/correct"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
         <TextView
+            style="@style/HiddenTextWrong"
             android:id="@+id/wrong7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#D32F2F"
             android:text="@string/wrong7"
-            android:textSize="24sp"
             android:visibility="gone"
             />
 
