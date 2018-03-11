@@ -14,16 +14,15 @@
 
 
         <TextView
+            style="@style/Text"
             android:id="@+id/welcome_message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
+            android:layout_gravity="center"
             android:layout_marginBottom="26dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_gravity="center"
-            android:text="Welcome"
-            android:textSize="24sp" />
+            android:layout_marginTop="26dp"
+            android:text="@string/welcome"
+         />
 
         //question 1
 
@@ -32,11 +31,10 @@
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="@string/domanda1"
-            />
+            android:text="@string/domanda1" />
 
         <TextView
-style="@style/Text"
+            style="@style/Text"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -105,24 +103,22 @@ style="@style/Text"
         //hidden text
 
         <TextView
-            style="@style/HiddenTextCorrect"
             android:id="@+id/correct1"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextCorrect"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/correct"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         <TextView
-            style="@style/HiddenTextWrong"
             android:id="@+id/wrong1"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextWrong"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/wrong1"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         //question 2
 
@@ -132,16 +128,14 @@ style="@style/Text"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            android:text="@string/domanda2"
-            />
+            android:text="@string/domanda2" />
 
         <TextView
             style="@style/Text"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="@string/testo2"
-            />
+            android:text="@string/testo2" />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
@@ -173,44 +167,40 @@ style="@style/Text"
         //hidden text
 
         <TextView
-            style="@style/HiddenTextCorrect"
             android:id="@+id/correct2"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextCorrect"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/correct"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         <TextView
-            style="@style/HiddenTextWrong"
             android:id="@+id/wrong2"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextWrong"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/wrong2"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         //question 3
 
         <TextView
-  style="@style/QuestionTitle"
+            style="@style/QuestionTitle"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:text="@string/domanda3"
-            />
+            android:text="@string/domanda3" />
 
         <TextView
-style="@style/Text"
+            style="@style/Text"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="@string/testo3"
-        />
+            android:text="@string/testo3" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -276,24 +266,22 @@ style="@style/Text"
         //hidden text
 
         <TextView
-            style="@style/HiddenTextCorrect"
             android:id="@+id/correct3"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextCorrect"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/correct"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         <TextView
-            style="@style/HiddenTextWrong"
             android:id="@+id/wrong3"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextWrong"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/wrong3"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         //question 4
 
@@ -304,16 +292,14 @@ style="@style/Text"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
             android:background="@color/colorAccent"
-            android:text="@string/domanda4"
-    />
+            android:text="@string/domanda4" />
 
         <TextView
-    style="@style/Text"
+            style="@style/Text"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="@string/testo4"
-     />
+            android:text="@string/testo4" />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
@@ -344,46 +330,42 @@ style="@style/Text"
         //hidden text
 
         <TextView
-            style="@style/HiddenTextCorrect"
             android:id="@+id/correct4"
+            style="@style/HiddenTextCorrect"
 
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
 
             android:text="@string/correct"
 
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         <TextView
-            style="@style/HiddenTextWrong"
             android:id="@+id/wrong4"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextWrong"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/wrong4"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         //question 5
 
         <TextView
-           style="@style/QuestionTitle"
+            style="@style/QuestionTitle"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            android:text="@string/domanda5"
-            />
+            android:text="@string/domanda5" />
 
         <TextView
-   style="@style/Text"
+            style="@style/Text"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="@string/testo5"
-          />
+            android:text="@string/testo5" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -441,24 +423,22 @@ style="@style/Text"
         //hidden text
 
         <TextView
-            style="@style/HiddenTextCorrect"
             android:id="@+id/correct5"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextCorrect"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/correct"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         <TextView
-            style="@style/HiddenTextWrong"
             android:id="@+id/wrong5"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextWrong"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/wrong5"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         //question 6
 
@@ -468,16 +448,14 @@ style="@style/Text"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            android:text="@string/domanda6"
-           />
+            android:text="@string/domanda6" />
 
         <TextView
             style="@style/Text"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="@string/testo6"
-    />
+            android:text="@string/testo6" />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
@@ -509,42 +487,39 @@ style="@style/Text"
         //hidden text
 
         <TextView
-            style="@style/HiddenTextCorrect"
             android:id="@+id/correct6"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextCorrect"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/correct"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         <TextView
-            style="@style/HiddenTextWrong"
             android:id="@+id/wrong6"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextWrong"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/wrong6"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         //question 7
 
         <TextView
-style="@style/QuestionTitle"
+            style="@style/QuestionTitle"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            android:text="@string/domanda7"
-        />
+            android:text="@string/domanda7" />
 
         <TextView
-style="@style/Text"            android:layout_marginBottom="16dp"
+            style="@style/Text"
+            android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="@string/testo7"
-          />
+            android:text="@string/testo7" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -602,46 +577,43 @@ style="@style/Text"            android:layout_marginBottom="16dp"
         //hidden text
 
         <TextView
-            style="@style/HiddenTextCorrect"
             android:id="@+id/correct7"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextCorrect"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/correct"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         <TextView
-            style="@style/HiddenTextWrong"
             android:id="@+id/wrong7"
-            android:layout_marginTop="16dp"
+            style="@style/HiddenTextWrong"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/wrong7"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/submit"
             android:layout_margin="24dp"
-            android:textSize="24sp"
             android:background="@color/colorAccent"
-            android:onClick="submit_button"/>
+            android:onClick="submit_button"
+            android:text="@string/submit"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/reset_tex_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="reset"
             android:layout_marginBottom="24dp"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
-            android:textSize="24sp"
             android:background="@color/colorAccent"
             android:onClick="reset_button"
-            />
+            android:text="reset"
+            android:textSize="24sp" />
 
     </LinearLayout>
 

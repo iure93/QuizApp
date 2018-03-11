@@ -45,10 +45,8 @@ public class MainActivity extends AppCompatActivity {
     int sq7;
 
 
-
-
     int point = 0;
-    String string_name=null;
+    String string_name = null;
     EditText name;
 
     CheckBox q1A_check_box;
@@ -79,9 +77,9 @@ public class MainActivity extends AppCompatActivity {
     TextView correct2;
     TextView correct3;
     TextView correct4;
-    TextView correct5 ;
+    TextView correct5;
     TextView correct6;
-    TextView correct7 ;
+    TextView correct7;
     TextView wrong1;
     TextView wrong2;
     TextView wrong3;
@@ -105,20 +103,20 @@ public class MainActivity extends AppCompatActivity {
         dialog.setCanceledOnTouchOutside(false);
 
         //find hidden view
-         correct1 = findViewById(R.id.correct1);
-         correct2 = findViewById(R.id.correct2);
-         correct3 = findViewById(R.id.correct3);
-         correct4 = findViewById(R.id.correct4);
-         correct5 = findViewById(R.id.correct5);
-         correct6 = findViewById(R.id.correct6);
-         correct7 = findViewById(R.id.correct7);
-         wrong1 = findViewById(R.id.wrong1);
-         wrong2 = findViewById(R.id.wrong2);
-         wrong3 = findViewById(R.id.wrong3);
-         wrong4 = findViewById(R.id.wrong4);
-         wrong5 = findViewById(R.id.wrong5);
-         wrong6 = findViewById(R.id.wrong6);
-         wrong7 = findViewById(R.id.wrong7);
+        correct1 = findViewById(R.id.correct1);
+        correct2 = findViewById(R.id.correct2);
+        correct3 = findViewById(R.id.correct3);
+        correct4 = findViewById(R.id.correct4);
+        correct5 = findViewById(R.id.correct5);
+        correct6 = findViewById(R.id.correct6);
+        correct7 = findViewById(R.id.correct7);
+        wrong1 = findViewById(R.id.wrong1);
+        wrong2 = findViewById(R.id.wrong2);
+        wrong3 = findViewById(R.id.wrong3);
+        wrong4 = findViewById(R.id.wrong4);
+        wrong5 = findViewById(R.id.wrong5);
+        wrong6 = findViewById(R.id.wrong6);
+        wrong7 = findViewById(R.id.wrong7);
 
 
         //classi
@@ -148,49 +146,48 @@ public class MainActivity extends AppCompatActivity {
         q7D_check_box = findViewById(R.id.q7D);
 
 
-        if(sq1==1){
+        if (sq1 == 1) {
             correct1.setVisibility(View.VISIBLE);
         }
-        if(sq1==2) {
+        if (sq1 == 2) {
             wrong1.setVisibility(View.VISIBLE);
         }
-        if(sq2==1){
+        if (sq2 == 1) {
             correct2.setVisibility(View.VISIBLE);
         }
-        if(sq2==2) {
+        if (sq2 == 2) {
             wrong2.setVisibility(View.VISIBLE);
         }
-        if(sq3==1){
+        if (sq3 == 1) {
             correct3.setVisibility(View.VISIBLE);
         }
-        if(sq3==2){
+        if (sq3 == 2) {
             wrong3.setVisibility(View.VISIBLE);
         }
-        if(sq4==1){
+        if (sq4 == 1) {
             correct4.setVisibility(View.VISIBLE);
         }
-        if(sq4==2) {
+        if (sq4 == 2) {
             wrong4.setVisibility(View.VISIBLE);
         }
-        if(sq5==1){
+        if (sq5 == 1) {
             correct5.setVisibility(View.VISIBLE);
         }
-        if(sq5==2){
+        if (sq5 == 2) {
             wrong5.setVisibility(View.VISIBLE);
         }
-        if(sq6==1){
+        if (sq6 == 1) {
             correct6.setVisibility(View.VISIBLE);
         }
-        if(sq6==2){
+        if (sq6 == 2) {
             wrong6.setVisibility(View.VISIBLE);
         }
-        if(sq7==1){
+        if (sq7 == 1) {
             correct7.setVisibility(View.VISIBLE);
         }
-        if(sq7==2){
+        if (sq7 == 2) {
             wrong7.setVisibility(View.VISIBLE);
         }
-
 
 
         if (savedInstanceState != null) {
@@ -219,21 +216,22 @@ public class MainActivity extends AppCompatActivity {
             string_name = savedInstanceState.getString("string_name");
             point = savedInstanceState.getInt("point");
 
-            sq1= savedInstanceState.getInt("sq1");
-            sq2= savedInstanceState.getInt("sq2");
-            sq3= savedInstanceState.getInt("sq3");
-            sq4= savedInstanceState.getInt("sq4");
-            sq5= savedInstanceState.getInt("sq5");
-            sq6= savedInstanceState.getInt("sq6");
-            sq7= savedInstanceState.getInt("sq7");
+            sq1 = savedInstanceState.getInt("sq1");
+            sq2 = savedInstanceState.getInt("sq2");
+            sq3 = savedInstanceState.getInt("sq3");
+            sq4 = savedInstanceState.getInt("sq4");
+            sq5 = savedInstanceState.getInt("sq5");
+            sq6 = savedInstanceState.getInt("sq6");
+            sq7 = savedInstanceState.getInt("sq7");
         }
 
         checkResult(null);
 
-        if (string_name!=null){
+        if (string_name != null) {
             dialog.dismiss();
             TextView name_text_view = (TextView) findViewById(R.id.welcome_message);
-            name_text_view.setText("Welcome " + string_name);}
+            name_text_view.setText("Welcome " + string_name);
+        }
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -327,22 +325,22 @@ public class MainActivity extends AppCompatActivity {
 
         if (q1D == false && q1C == false && q1B == true && q1A == false) {
             correct1.setVisibility(View.VISIBLE);
-            sq1=1;
+            sq1 = 1;
 
             point += 1;
         } else {
             wrong1.setVisibility(View.VISIBLE);
-            sq1=2;
+            sq1 = 2;
         }
 
         //question 2
 
         if (q2A == true && q2B == false) {
             correct2.setVisibility(View.VISIBLE);
-            sq2=1;
+            sq2 = 1;
             point += 1;
         } else {
-            sq2=2;
+            sq2 = 2;
             wrong2.setVisibility(View.VISIBLE);
         }
 
@@ -350,10 +348,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (q3A == false && q3B == false && q3C == false && q3D == true) {
             correct3.setVisibility(View.VISIBLE);
-            sq3=1;
+            sq3 = 1;
             point += 1;
         } else {
-            sq3=2;
+            sq3 = 2;
             wrong3.setVisibility(View.VISIBLE);
         }
 
@@ -361,10 +359,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (q4A == true && q4B == false) {
             correct4.setVisibility(View.VISIBLE);
-            sq4=1;
+            sq4 = 1;
             point += 1;
         } else {
-            sq4=2;
+            sq4 = 2;
             wrong4.setVisibility(View.VISIBLE);
         }
 
@@ -372,10 +370,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (q5A == false && q5B == false && q5C == true && q5D == false) {
             correct5.setVisibility(View.VISIBLE);
-            sq5=1;
+            sq5 = 1;
             point += 1;
         } else {
-            sq5=2;
+            sq5 = 2;
             wrong5.setVisibility(View.VISIBLE);
         }
 
@@ -383,10 +381,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (q6A == true && q6B == false) {
             correct6.setVisibility(View.VISIBLE);
-            sq6=1;
+            sq6 = 1;
             point += 1;
         } else {
-            sq6=2;
+            sq6 = 2;
             wrong6.setVisibility(View.VISIBLE);
         }
 
@@ -394,10 +392,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (q7A == true && q7B == false && q7C == false && q7D == true) {
             correct7.setVisibility(View.VISIBLE);
-            sq7=1;
+            sq7 = 1;
             point += 1;
         } else {
-            sq7=2;
+            sq7 = 2;
             wrong7.setVisibility(View.VISIBLE);
         }
 
@@ -407,80 +405,80 @@ public class MainActivity extends AppCompatActivity {
         mBuilder.setView(nView);
         final AlertDialog dialog = mBuilder.create();
         TextView scoreView = nView.findViewById(R.id.score);
-        scoreView.setText(String.valueOf(point)+" out of 7");
+        scoreView.setText(String.valueOf(point) + " out of 7");
         dialog.show();
 
     }
 
-    public void checkResult(View view){
-        if(sq1==1){
+    public void checkResult(View view) {
+        if (sq1 == 1) {
             correct1.setVisibility(View.VISIBLE);
         }
-        if(sq1==2) {
+        if (sq1 == 2) {
             wrong1.setVisibility(View.VISIBLE);
         }
-        if(sq2==1){
+        if (sq2 == 1) {
             correct2.setVisibility(View.VISIBLE);
         }
-        if(sq2==2) {
+        if (sq2 == 2) {
             wrong2.setVisibility(View.VISIBLE);
         }
-        if(sq3==1){
+        if (sq3 == 1) {
             correct3.setVisibility(View.VISIBLE);
         }
-        if(sq3==2){
+        if (sq3 == 2) {
             wrong3.setVisibility(View.VISIBLE);
         }
-        if(sq4==1){
+        if (sq4 == 1) {
             correct4.setVisibility(View.VISIBLE);
         }
-        if(sq4==2) {
+        if (sq4 == 2) {
             wrong4.setVisibility(View.VISIBLE);
         }
-        if(sq5==1){
+        if (sq5 == 1) {
             correct5.setVisibility(View.VISIBLE);
         }
-        if(sq5==2){
+        if (sq5 == 2) {
             wrong5.setVisibility(View.VISIBLE);
         }
-        if(sq6==1){
+        if (sq6 == 1) {
             correct6.setVisibility(View.VISIBLE);
         }
-        if(sq6==2){
+        if (sq6 == 2) {
             wrong6.setVisibility(View.VISIBLE);
         }
-        if(sq7==1){
+        if (sq7 == 1) {
             correct7.setVisibility(View.VISIBLE);
         }
-        if(sq7==2){
+        if (sq7 == 2) {
             wrong7.setVisibility(View.VISIBLE);
         }
 
     }
 
-    public void reset_button (View view){
-         q1A=false;
-         q1B=false;
-         q1C=false;
-         q1D=false;
-         q2A=false;
-         q2B=false;
-         q3A=false;
-         q3B=false;
-         q3C=false;
-         q3D=false;
-         q4A=false;
-         q4B=false;
-         q5A=false;
-         q5B=false;
-         q5C=false;
-         q5D=false;
-         q6A=false;
-         q6B=false;
-         q7A=false;
-         q7B=false;
-         q7C=false;
-         q7D=false;
+    public void reset_button(View view) {
+        q1A = false;
+        q1B = false;
+        q1C = false;
+        q1D = false;
+        q2A = false;
+        q2B = false;
+        q3A = false;
+        q3B = false;
+        q3C = false;
+        q3D = false;
+        q4A = false;
+        q4B = false;
+        q5A = false;
+        q5B = false;
+        q5C = false;
+        q5D = false;
+        q6A = false;
+        q6B = false;
+        q7A = false;
+        q7B = false;
+        q7C = false;
+        q7D = false;
 
         sq1 = 0;
         sq2 = 0;
@@ -512,28 +510,23 @@ public class MainActivity extends AppCompatActivity {
         q7C_check_box.setChecked(false);
         q7D_check_box.setChecked(false);
 
-            correct1.setVisibility(View.GONE);
-            wrong1.setVisibility(View.GONE);
-            correct2.setVisibility(View.GONE);
-            wrong2.setVisibility(View.GONE);
-            correct3.setVisibility(View.GONE);
-            wrong3.setVisibility(View.GONE);
-            correct4.setVisibility(View.GONE);
-            wrong4.setVisibility(View.GONE);
-            correct5.setVisibility(View.GONE);
-            wrong5.setVisibility(View.GONE);
-            correct6.setVisibility(View.GONE);
-            wrong6.setVisibility(View.GONE);
-            correct7.setVisibility(View.GONE);
-            wrong7.setVisibility(View.GONE);
-
-
+        correct1.setVisibility(View.GONE);
+        wrong1.setVisibility(View.GONE);
+        correct2.setVisibility(View.GONE);
+        wrong2.setVisibility(View.GONE);
+        correct3.setVisibility(View.GONE);
+        wrong3.setVisibility(View.GONE);
+        correct4.setVisibility(View.GONE);
+        wrong4.setVisibility(View.GONE);
+        correct5.setVisibility(View.GONE);
+        wrong5.setVisibility(View.GONE);
+        correct6.setVisibility(View.GONE);
+        wrong6.setVisibility(View.GONE);
+        correct7.setVisibility(View.GONE);
+        wrong7.setVisibility(View.GONE);
 
 
     }
-
-
-
 
 
 }
