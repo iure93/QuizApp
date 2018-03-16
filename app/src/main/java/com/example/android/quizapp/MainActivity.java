@@ -303,7 +303,7 @@ public class MainActivity extends AppCompatActivity {
         q7C = q7C_check_box.isChecked();
         q7D = q7D_check_box.isChecked();
 
-        if (q1D == false && q1C == false && q1B == true && q1A == false) {
+        if (!q1D && !q1C && q1B && !q1A) {
             correct1.setVisibility(View.VISIBLE);
             sq1 = 1;
             point += 1;
@@ -325,7 +325,7 @@ public class MainActivity extends AppCompatActivity {
 
         //question 3
 
-        if (q3A == false && q3B == false && q3C == false && q3D == true) {
+        if (!q3A && !q3B && !q3C && q3D) {
             correct3.setVisibility(View.VISIBLE);
             sq3 = 1;
             point += 1;
@@ -336,7 +336,7 @@ public class MainActivity extends AppCompatActivity {
 
         //question 4
 
-        if (q4A == true && q4B == false) {
+        if (q4A && !q4B) {
             correct4.setVisibility(View.VISIBLE);
             sq4 = 1;
             point += 1;
@@ -347,7 +347,7 @@ public class MainActivity extends AppCompatActivity {
 
         //question 5
 
-        if (q5A == false && q5B == false && q5C == true && q5D == false) {
+        if (!q5A && !q5B && q5C && !q5D) {
             correct5.setVisibility(View.VISIBLE);
             sq5 = 1;
             point += 1;
@@ -358,7 +358,7 @@ public class MainActivity extends AppCompatActivity {
 
         //question 6
 
-        if (q6A == true && q6B == false) {
+        if (q6A && !q6B) {
             correct6.setVisibility(View.VISIBLE);
             sq6 = 1;
             point += 1;
@@ -369,7 +369,7 @@ public class MainActivity extends AppCompatActivity {
 
         //question 7
 
-        if (q7A == true && q7B == false && q7C == false && q7D == true) {
+        if (q7A && !q7B && !q7C && q7D) {
             correct7.setVisibility(View.VISIBLE);
             sq7 = 1;
             point += 1;
@@ -377,7 +377,7 @@ public class MainActivity extends AppCompatActivity {
             sq7 = 2;
             wrong7.setVisibility(View.VISIBLE);
         }
-        Toast.makeText(MainActivity.this, getString(R.string.toast_result)+point+ " out of 7", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, getString(R.string.toast_result) + point + " out of 7", Toast.LENGTH_LONG).show();
     }
 
     public void checkResult(View view) {
