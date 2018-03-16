@@ -17,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
     boolean q1B;
     boolean q1C;
     boolean q1D;
-    boolean q2A;
-    boolean q2B;
     boolean q3A;
     boolean q3B;
     boolean q3C;
@@ -35,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     boolean q7B;
     boolean q7C;
     boolean q7D;
-
     int sq1;
     int sq2;
     int sq3;
@@ -43,18 +40,16 @@ public class MainActivity extends AppCompatActivity {
     int sq5;
     int sq6;
     int sq7;
-
-
     int point = 0;
     String string_name = null;
+    String string_question2;
+    String answer2 = "RADIO WAVES";
     EditText name;
-
+    EditText question2;
     CheckBox q1A_check_box;
     CheckBox q1B_check_box;
     CheckBox q1C_check_box;
     CheckBox q1D_check_box;
-    RadioButton q2A_radio_button;
-    RadioButton q2B_radio_button;
     CheckBox q3A_check_box;
     CheckBox q3B_check_box;
     CheckBox q3C_check_box;
@@ -71,8 +66,6 @@ public class MainActivity extends AppCompatActivity {
     CheckBox q7B_check_box;
     CheckBox q7C_check_box;
     CheckBox q7D_check_box;
-
-
     TextView correct1;
     TextView correct2;
     TextView correct3;
@@ -93,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
         View mView = getLayoutInflater().inflate(R.layout.dialog, null);
         mBuilder.setView(mView);
@@ -103,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.setCanceledOnTouchOutside(false);
 
         //find hidden view
+        question2 = (EditText) findViewById(R.id.answer_question_2);
         correct1 = findViewById(R.id.correct1);
         correct2 = findViewById(R.id.correct2);
         correct3 = findViewById(R.id.correct3);
@@ -118,7 +111,6 @@ public class MainActivity extends AppCompatActivity {
         wrong6 = findViewById(R.id.wrong6);
         wrong7 = findViewById(R.id.wrong7);
 
-
         //classi
         name = mView.findViewById(R.id.name_dialog);
         Button submit = mView.findViewById(R.id.submit);
@@ -126,8 +118,6 @@ public class MainActivity extends AppCompatActivity {
         q1B_check_box = findViewById(R.id.q1B);
         q1C_check_box = findViewById(R.id.q1C);
         q1D_check_box = findViewById(R.id.q1D);
-        q2A_radio_button = findViewById(R.id.q2A);
-        q2B_radio_button = findViewById(R.id.q2B);
         q3A_check_box = findViewById(R.id.q3A);
         q3B_check_box = findViewById(R.id.q3B);
         q3C_check_box = findViewById(R.id.q3C);
@@ -144,7 +134,6 @@ public class MainActivity extends AppCompatActivity {
         q7B_check_box = findViewById(R.id.q7B);
         q7C_check_box = findViewById(R.id.q7C);
         q7D_check_box = findViewById(R.id.q7D);
-
 
         if (sq1 == 1) {
             correct1.setVisibility(View.VISIBLE);
@@ -189,14 +178,11 @@ public class MainActivity extends AppCompatActivity {
             wrong7.setVisibility(View.VISIBLE);
         }
 
-
         if (savedInstanceState != null) {
             q1A = savedInstanceState.getBoolean("q1A");
             q1B = savedInstanceState.getBoolean("q1B");
             q1C = savedInstanceState.getBoolean("q1C");
             q1D = savedInstanceState.getBoolean("q1D");
-            q2A = savedInstanceState.getBoolean("q2A");
-            q2B = savedInstanceState.getBoolean("q2B");
             q3A = savedInstanceState.getBoolean("q3A");
             q3B = savedInstanceState.getBoolean("q3B");
             q3C = savedInstanceState.getBoolean("q3C");
@@ -215,7 +201,6 @@ public class MainActivity extends AppCompatActivity {
             q7D = savedInstanceState.getBoolean("q7D");
             string_name = savedInstanceState.getString("string_name");
             point = savedInstanceState.getInt("point");
-
             sq1 = savedInstanceState.getInt("sq1");
             sq2 = savedInstanceState.getInt("sq2");
             sq3 = savedInstanceState.getInt("sq3");
@@ -259,8 +244,6 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putBoolean("q1B", q1B);
         savedInstanceState.putBoolean("q1C", q1C);
         savedInstanceState.putBoolean("q1D", q1D);
-        savedInstanceState.putBoolean("q2A", q2A);
-        savedInstanceState.putBoolean("q2B", q2B);
         savedInstanceState.putBoolean("q3A", q3A);
         savedInstanceState.putBoolean("q3B", q3B);
         savedInstanceState.putBoolean("q3C", q3C);
@@ -290,21 +273,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submit_button(View view) {
-
         //correct answer 1: q1B
-        //correct answer 2: q2A
+        //correct answer 2: "radio waves"
         //correct answer 3: q3D
         //correct answer 4: q4A
         //correct answer 5: q5C
         //correct answer 6: q6A
         //correct answer 7: q7A e q7D
-
+        point = 0;
         q1A = q1A_check_box.isChecked();
         q1B = q1B_check_box.isChecked();
         q1C = q1C_check_box.isChecked();
         q1D = q1D_check_box.isChecked();
-        q2A = q2A_radio_button.isChecked();
-        q2B = q2B_radio_button.isChecked();
+        string_question2 = question2.getText().toString().toUpperCase();
         q3A = q3A_check_box.isChecked();
         q3B = q3B_check_box.isChecked();
         q3C = q3C_check_box.isChecked();
@@ -322,11 +303,9 @@ public class MainActivity extends AppCompatActivity {
         q7C = q7C_check_box.isChecked();
         q7D = q7D_check_box.isChecked();
 
-
         if (q1D == false && q1C == false && q1B == true && q1A == false) {
             correct1.setVisibility(View.VISIBLE);
             sq1 = 1;
-
             point += 1;
         } else {
             wrong1.setVisibility(View.VISIBLE);
@@ -335,7 +314,7 @@ public class MainActivity extends AppCompatActivity {
 
         //question 2
 
-        if (q2A == true && q2B == false) {
+        if (string_question2.equals(answer2)) {
             correct2.setVisibility(View.VISIBLE);
             sq2 = 1;
             point += 1;
@@ -398,16 +377,7 @@ public class MainActivity extends AppCompatActivity {
             sq7 = 2;
             wrong7.setVisibility(View.VISIBLE);
         }
-
-
-        AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
-        View nView = getLayoutInflater().inflate(R.layout.dialog_final, null);
-        mBuilder.setView(nView);
-        final AlertDialog dialog = mBuilder.create();
-        TextView scoreView = nView.findViewById(R.id.score);
-        scoreView.setText(String.valueOf(point) + " out of 7");
-        dialog.show();
-
+        Toast.makeText(MainActivity.this, getString(R.string.toast_result)+point+ " out of 7", Toast.LENGTH_LONG).show();
     }
 
     public void checkResult(View view) {
@@ -453,7 +423,6 @@ public class MainActivity extends AppCompatActivity {
         if (sq7 == 2) {
             wrong7.setVisibility(View.VISIBLE);
         }
-
     }
 
     public void reset_button(View view) {
@@ -461,8 +430,7 @@ public class MainActivity extends AppCompatActivity {
         q1B = false;
         q1C = false;
         q1D = false;
-        q2A = false;
-        q2B = false;
+        question2.setText(null);
         q3A = false;
         q3B = false;
         q3C = false;
@@ -479,7 +447,6 @@ public class MainActivity extends AppCompatActivity {
         q7B = false;
         q7C = false;
         q7D = false;
-
         sq1 = 0;
         sq2 = 0;
         sq3 = 0;
@@ -491,8 +458,6 @@ public class MainActivity extends AppCompatActivity {
         q1A_check_box.setChecked(false);
         q1B_check_box.setChecked(false);
         q1D_check_box.setChecked(false);
-        q2A_radio_button.setChecked(false);
-        q2B_radio_button.setChecked(false);
         q3A_check_box.setChecked(false);
         q3B_check_box.setChecked(false);
         q3C_check_box.setChecked(false);
@@ -509,7 +474,6 @@ public class MainActivity extends AppCompatActivity {
         q7B_check_box.setChecked(false);
         q7C_check_box.setChecked(false);
         q7D_check_box.setChecked(false);
-
         correct1.setVisibility(View.GONE);
         wrong1.setVisibility(View.GONE);
         correct2.setVisibility(View.GONE);
@@ -524,11 +488,7 @@ public class MainActivity extends AppCompatActivity {
         wrong6.setVisibility(View.GONE);
         correct7.setVisibility(View.GONE);
         wrong7.setVisibility(View.GONE);
-
-
     }
-
-
 }
 
 

@@ -12,17 +12,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
         <TextView
-            style="@style/Text"
             android:id="@+id/welcome_message"
+            style="@style/Text"
             android:layout_gravity="center"
             android:layout_marginBottom="26dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="26dp"
-            android:text="@string/welcome"
-         />
+            android:text="@string/welcome" />
 
         //question 1
 
@@ -100,6 +98,7 @@
                 android:text="@string/an_asteroid"
                 android:textSize="18sp" />
         </LinearLayout>
+
         //hidden text
 
         <TextView
@@ -132,37 +131,18 @@
 
         <TextView
             style="@style/Text"
-            android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:text="@string/testo2" />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+        <EditText
+            android:id="@+id/answer_question_2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-            <RadioButton
-                android:id="@+id/q2A"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/radio_waves"
-                android:textSize="18sp" />
-
-            <RadioButton
-                android:id="@+id/q2B"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/gravity_waves"
-                android:textSize="18sp" />
-        </RadioGroup>
+            android:layout_margin="16dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:hint="@string/answer" />
 
         //hidden text
 
@@ -171,7 +151,6 @@
             style="@style/HiddenTextCorrect"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
             android:text="@string/correct"
             android:visibility="gone" />
 
@@ -616,6 +595,4 @@
             android:textSize="24sp" />
 
     </LinearLayout>
-
-
 </ScrollView>

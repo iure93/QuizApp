@@ -4,6 +4,7 @@
     <string name="testo1">This picture shows an object in space that has an icy core with a tail of gas and dust that extends millions of miles. What is this?</string>
     <string name="domanda2">Question 2:</string>
     <string name="testo2">Which kind of waves are used to make and receive cellphone calls?</string>
+    <string name="answer">radio waves or gravity waves</string>
     <string name="domanda3">Question 3:</string>
     <string name="testo3">This picture shows three layers of the Earth. Which layer is the hottest?</string>
     <string name="domanda4">Question 4:</string>
@@ -53,5 +54,7 @@
     <string name="wrong7">Wrong!\nThe correct answer is Amplitude and Height</string>
     <string name="Welcome">Welcome</string>
     <string name="share">Share</string>
+    <string name="toast_result">The result of the quiz is: </string>
+
 
 </resources>
